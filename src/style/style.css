@@ -62,4 +62,10 @@ header ul li a:hover {
   text-decoration: underline;
 }
 
+.partTowMine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=style.css.map */
