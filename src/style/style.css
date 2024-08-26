@@ -10,10 +10,38 @@ body {
   background-color: hsl(219, 30%, 18%);
 }
 
+ul {
+  list-style: none;
+  display: flex;
+}
+
+.continer {
+  padding: 0 60px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+header ul {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+header ul li a {
+  color: hsl(0, 0%, 100%);
+}
+header ul li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
