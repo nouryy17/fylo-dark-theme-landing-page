@@ -3,10 +3,21 @@ header
     justify-content: space-between
     align-items: center
     height: 80px
+    @include for-size(max-mobile)
+      flex-direction: column
+      justify-content: center
+      gap: 15px
+      height: 100px 
     ul
         flex-basis: 20%
         display: flex
         justify-content: space-between 
+        @include for-size(max-mobile)
+          width: 100% 
+        @include for-size(tablet-landscape-up )
+           flex-basis: 50%
+
+
         li
             a
                 color: $White
