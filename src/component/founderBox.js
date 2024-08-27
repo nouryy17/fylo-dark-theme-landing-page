@@ -1,9 +1,9 @@
  
-export default function ({h,pOne,pTow,img}) {
+export default function ({h,pONE,pTow,img}) {
     return(
-        <div>
-            <p>  {pOne} </p>
-            <div>
+        <div className="founderBox">
+            <p>  {pONE} </p>
+            <div className="info">
               <img src={img}></img>
             <div> 
                 <h6> {h} </h6>
