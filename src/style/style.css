@@ -11,7 +11,7 @@ p {
 }
 
 body {
-  background-color: hsl(219, 30%, 18%);
+  background-color: hsl(217, 28%, 15%);
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -56,7 +56,7 @@ header ul {
     width: 100%;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   header ul {
     flex-basis: 50%;
   }
@@ -120,7 +120,7 @@ p {
 }
 
 body {
-  background-color: hsl(219, 30%, 18%);
+  background-color: hsl(217, 28%, 15%);
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -145,6 +145,46 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 10px;
+  position: relative;
+  background-color: hsl(218, 28%, 13%);
+}
+.props:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: -75%;
+  left: 0;
+  height: 100%;
+  background-image: url(../images/bg-curvy-desktop.svg);
+  background-size: 100% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  .props {
+    grid-template-columns: 5fr;
+  }
+}
+@media (max-width: 767px) {
+  .props {
+    grid-template-columns: 10fr;
+  }
+}
+@media (max-width: 375px) {
+  .props:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: -75%;
+    left: 0;
+    background-image: url(http://localhost:3000/static/media/bg-curvy-mobile.3ab5d2c7091bda722a7b.svg);
+    z-index: -1;
+    height: 100%;
+    background-size: 100% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 .props .box {
   text-align: center;
