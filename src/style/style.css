@@ -66,6 +66,32 @@ header ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.partTowMine img {
+  width: 400px;
+}
+.partTowMine h1, .partTowMine p {
+  color: hsl(0, 0%, 100%);
+  max-width: 600px;
+  text-align: center;
+}
+.partTowMine p {
+  font-size: 14px;
+}
+.partTowMine button {
+  width: 200px;
+  padding: 10px 0;
+  border-radius: 16px;
+  border: none;
+  background: hsl(176, 68%, 64%);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.partTowMine button:hover {
+  background: hsla(176, 68%, 64%, 0.6);
 }
 
 /*# sourceMappingURL=style.css.map */
