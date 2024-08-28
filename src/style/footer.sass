@@ -1,0 +1,53 @@
+@import "./varble"
+@import "./mixsin"
+footer
+    padding: 100px 40px 60px
+    div
+        display: flex
+        justify-content: space-between
+        align-items: center
+        // grid-template-columns: repeat(auto-fill,minmax(200px,1fr))
+        color: $White
+        
+        ul
+            flex-direction: column
+            li
+                cursor: pointer
+                &:hover
+                    color: $Cyan
+        .icons
+            flex-basis: 20% 
+            display: flex
+            justify-content: center
+            gap: 10px
+            svg
+               width: 20px
+               cursor: pointer
+               &:hover
+                path
+                    fill: $Cyan 
+        .one
+            flex-basis: 30% 
+            position: relative
+            margin-left: 13px
+            
+            &::after
+                content: "\f3c5"
+                position: absolute
+                top: 0
+                left: -20px
+                width: 30px
+                height: 30px
+                font-size: 16px
+                font-weight: 900
+                font-family: 'Font Awesome 6 Free'
+
+        .tow
+            display: block
+            flex-basis: 20% 
+        .three
+            flex-basis: 20% 
+        .four
+            flex-basis: 10% 
+
+            
