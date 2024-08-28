@@ -1,0 +1,30 @@
+@import "./mixsin"
+@import "./varble"
+.Email
+    background-color: $Dark-Blue-tow
+    div
+        margin: auto
+        padding: 20px
+        background-color: $Dark-Blue-one
+        width: fit-content
+        text-align: center
+        color: $White
+        p
+            font-size: 12px
+            max-width: 500px
+            margin: 15Px
+        div
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100%
+            gap: 20px
+            @include for-size(tablet-landscape )
+               flex-wrap: wrap
+
+               justify-content: center
+            input
+                border: none
+                border-radius: 16px
+                padding: 10px
+                flex-basis: 80%

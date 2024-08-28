@@ -26,6 +26,20 @@ ul {
   padding: 60px;
 }
 
+.button {
+  width: 200px;
+  padding: 10px 0;
+  border-radius: 16px;
+  border: none;
+  background: hsl(176, 68%, 64%);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button:hover {
+  background: hsla(176, 68%, 64%, 0.6);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -93,19 +107,6 @@ header ul li a:hover {
 .partTowMine p {
   font-size: 14px;
 }
-.partTowMine .button {
-  width: 200px;
-  padding: 10px 0;
-  border-radius: 16px;
-  border: none;
-  background: hsl(176, 68%, 64%);
-  color: white;
-  cursor: pointer;
-  transition: 0.5s;
-}
-.partTowMine .button:hover {
-  background: hsla(176, 68%, 64%, 0.6);
-}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
@@ -133,6 +134,20 @@ ul {
 
 .continer {
   padding: 60px;
+}
+
+.button {
+  width: 200px;
+  padding: 10px 0;
+  border-radius: 16px;
+  border: none;
+  background: hsl(176, 68%, 64%);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button:hover {
+  background: hsla(176, 68%, 64%, 0.6);
 }
 
 * {
@@ -199,6 +214,90 @@ ul {
 }
 .props .box h4 {
   margin: 15px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+p, span, div {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 14px;
+}
+
+body {
+  background-color: hsl(217, 28%, 15%);
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+.continer {
+  padding: 60px;
+}
+
+.button {
+  width: 200px;
+  padding: 10px 0;
+  border-radius: 16px;
+  border: none;
+  background: hsl(176, 68%, 64%);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button:hover {
+  background: hsla(176, 68%, 64%, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Email {
+  background-color: hsl(218, 28%, 13%);
+}
+.Email div {
+  margin: auto;
+  padding: 20px;
+  background-color: hsl(217, 28%, 15%);
+  width: fit-content;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+.Email div p {
+  font-size: 12px;
+  max-width: 500px;
+  margin: 15Px;
+}
+.Email div div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .Email div div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.Email div div input {
+  border: none;
+  border-radius: 16px;
+  padding: 10px;
+  flex-basis: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */
