@@ -2,7 +2,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-p, span, div {
+p, span, div, li {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-p, span, div {
+p, span, div, li {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -220,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-p, span, div {
+p, span, div, li {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -304,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-p, span, div {
+p, span, div, li {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -380,7 +380,7 @@ footer div .icons svg:hover path {
   fill: hsl(176, 68%, 64%);
 }
 footer div .one {
-  flex-basis: 30%;
+  flex-basis: 23%;
   position: relative;
   margin-left: 13px;
 }
@@ -397,7 +397,35 @@ footer div .one::after {
 }
 footer div .tow {
   display: block;
-  flex-basis: 20%;
+  flex-basis: 16%;
+  margin-left: 20px;
+}
+footer div .tow p {
+  position: relative;
+}
+footer div .tow p:first-of-type:after {
+  content: "\f095";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  margin-left: -8px;
+}
+footer div .tow p:nth-of-type(2):after {
+  content: "\f0e0";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  margin-left: -8px;
 }
 footer div .three {
   flex-basis: 20%;
