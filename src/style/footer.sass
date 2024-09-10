@@ -2,13 +2,18 @@
 @import "./mixsin"
 footer
     padding: 100px 40px 60px
-    div
+    
+    .firstDiv
         display: flex
         justify-content: space-between
         align-items: center
         // grid-template-columns: repeat(auto-fill,minmax(200px,1fr))
         color: $White
-        
+        @include for-size(tablet-landscape)
+          flex-wrap: wrap
+          flex-direction: column
+          justify-content: center
+          gap: 20px
         ul
             flex-direction: column
             li

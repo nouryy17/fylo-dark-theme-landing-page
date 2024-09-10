@@ -351,40 +351,48 @@ ul {
 footer {
   padding: 100px 40px 60px;
 }
-footer div {
+footer .firstDiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: hsl(0, 0%, 100%);
 }
-footer div ul {
+@media (max-width: 991px) {
+  footer .firstDiv {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+footer .firstDiv ul {
   flex-direction: column;
 }
-footer div ul li {
+footer .firstDiv ul li {
   cursor: pointer;
 }
-footer div ul li:hover {
+footer .firstDiv ul li:hover {
   color: hsl(176, 68%, 64%);
 }
-footer div .icons {
+footer .firstDiv .icons {
   flex-basis: 20%;
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-footer div .icons svg {
+footer .firstDiv .icons svg {
   width: 20px;
   cursor: pointer;
 }
-footer div .icons svg:hover path {
+footer .firstDiv .icons svg:hover path {
   fill: hsl(176, 68%, 64%);
 }
-footer div .one {
+footer .firstDiv .one {
   flex-basis: 23%;
   position: relative;
   margin-left: 13px;
 }
-footer div .one::after {
+footer .firstDiv .one::after {
   content: "\f3c5";
   position: absolute;
   top: 0;
@@ -395,15 +403,15 @@ footer div .one::after {
   font-weight: 900;
   font-family: "Font Awesome 6 Free";
 }
-footer div .tow {
+footer .firstDiv .tow {
   display: block;
   flex-basis: 16%;
   margin-left: 20px;
 }
-footer div .tow p {
+footer .firstDiv .tow p {
   position: relative;
 }
-footer div .tow p:first-of-type:after {
+footer .firstDiv .tow p:first-of-type:after {
   content: "\f095";
   position: absolute;
   top: 0;
@@ -415,7 +423,7 @@ footer div .tow p:first-of-type:after {
   font-family: "Font Awesome 6 Free";
   margin-left: -8px;
 }
-footer div .tow p:nth-of-type(2):after {
+footer .firstDiv .tow p:nth-of-type(2):after {
   content: "\f0e0";
   position: absolute;
   top: 0;
@@ -427,10 +435,10 @@ footer div .tow p:nth-of-type(2):after {
   font-family: "Font Awesome 6 Free";
   margin-left: -8px;
 }
-footer div .three {
+footer .firstDiv .three {
   flex-basis: 20%;
 }
-footer div .four {
+footer .firstDiv .four {
   flex-basis: 10%;
 }
 

@@ -7,7 +7,7 @@ export default function () {
         <footer >
             <img src={imf}></img>
           
-            <div>
+            <div className="firstDiv">
             <p className="one">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
             <div className="tow">
             <p> +1-543-123-4567</p>
