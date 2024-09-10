@@ -1,0 +1,107 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+p, span, div, li {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 14px;
+}
+
+body {
+  background-color: hsl(217, 28%, 15%);
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+.continer {
+  padding: 60px;
+}
+
+.button {
+  width: 200px;
+  padding: 10px 0;
+  border-radius: 16px;
+  border: none;
+  background: hsl(176, 68%, 64%);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button:hover {
+  background: hsla(176, 68%, 64%, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.props {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 10px;
+  position: relative;
+  background-color: hsl(218, 28%, 13%);
+}
+.props:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: -75%;
+  left: 0;
+  height: 100%;
+  background-image: url(../images/bg-curvy-desktop.svg);
+  background-size: 100% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+@media (max-width: 991px) {
+  .props {
+    grid-template-columns: 5fr;
+  }
+}
+@media (max-width: 767px) {
+  .props {
+    grid-template-columns: 10fr;
+  }
+}
+@media (max-width: 375px) {
+  .props:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: -75%;
+    left: 0;
+    background-image: url(http://localhost:3000/static/media/bg-curvy-mobile.3ab5d2c7091bda722a7b.svg);
+    z-index: -1;
+    height: 100%;
+    background-size: 100% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.props .box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.props .box p, .props .box h4 {
+  color: hsl(0, 0%, 100%);
+}
+.props .box p {
+  max-width: 400px;
+  margin: auto;
+}
+.props .box h4 {
+  margin: 15px 0;
+}/*# sourceMappingURL=props.css.map */

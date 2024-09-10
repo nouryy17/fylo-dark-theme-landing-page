@@ -271,6 +271,7 @@ ul {
   margin: auto;
   padding: 20px;
   background-color: hsl(217, 28%, 15%);
+  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
   color: hsl(0, 0%, 100%);
@@ -350,6 +351,12 @@ ul {
 
 footer {
   padding: 100px 40px 60px;
+}
+@media (max-width: 767px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 footer .firstDiv {
   display: flex;
@@ -440,6 +447,4 @@ footer .firstDiv .three {
 }
 footer .firstDiv .four {
   flex-basis: 10%;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

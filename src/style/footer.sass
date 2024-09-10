@@ -2,7 +2,12 @@
 @import "./mixsin"
 footer
     padding: 100px 40px 60px
-    
+    @include for-size(max-mobile)
+        display: flex
+        flex-direction: column
+    img
+       @include for-size(max-mobile)
+          margin: auto
     .firstDiv
         display: flex
         justify-content: space-between
@@ -35,7 +40,12 @@ footer
             flex-basis: 23% 
             position: relative
             margin-left: 13px
-            
+            @include for-size(max-mobile)
+               text-align: center
+               margin: 20px 0
+            @include for-size(max-mobile)
+               text-align: center
+               
             &::after
                 content: "\f3c5"
                 position: absolute
@@ -53,6 +63,9 @@ footer
             margin-left: 20px
             p
                 position: relative
+                @include for-size(max-mobile)
+                   margin-bottom: 10px
+                
                 &:first-of-type
                     &:after
                         content: "\f095"
@@ -79,7 +92,18 @@ footer
                         margin-left: -8px
         .three
             flex-basis: 20% 
+            @include for-size(max-mobile)
+               text-align: center
+            li
+                margin-bottom: 10px
+            
         .four
             flex-basis: 10% 
+            @include for-size(max-mobile)
+               text-align: center
+            li
+                margin-bottom: 10px
+            
+            
 
             
